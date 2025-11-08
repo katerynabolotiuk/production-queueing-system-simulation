@@ -82,6 +82,13 @@ public class PrimaryProcess extends Element {
     }
 
     public void setQueue(int queue) {
+        itemQueue.clear();
+
+        for (int i = 0; i < queue; i++) {
+            Item item = new Item();  
+            itemQueue.add(item);
+        }
+
         this.queue = queue;
     }
 
