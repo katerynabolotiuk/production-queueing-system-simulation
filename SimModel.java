@@ -50,6 +50,9 @@ public class SimModel {
         p2.addNextElementWithProbability(p2, P2_DEFECT_PROB);
         p2.addNextElementWithProbability(p3, 1 - P2_DEFECT_PROB);
 
+        p1.setQueue(1);
+        p3.setQueue(12);
+
         ArrayList<Element> list = new ArrayList<>();
         list.add(c);
         list.add(p1);
